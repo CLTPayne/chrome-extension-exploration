@@ -7,3 +7,8 @@ Following this introductory tutorial in order to get started with Chrome extensi
 3. Click “Load unpacked” from the menu on the left, then use the file loader to select your extension's directory.
 4. Your extension should now be visible in the list, including others you already have installed in your browser. 
 5. When you amend the code of tyour extension, return to this page and reload. Chrome will then reload your extension.
+
+#### Principles of Google extensions
+1. Content scripts can pull / use info on the page but they have limitations and cannot use all the chrome APIs. 
+2. Background scripts have full access to the chrome APIs but cannot access the current page. 
+3. Message passing is how a content script interacts with a background script. 
