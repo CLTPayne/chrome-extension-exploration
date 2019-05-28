@@ -3,7 +3,7 @@
     "version": "1.0",
     "description": "User selects a background colour for a browser window",
     "manifest_version": 2,
-    "permissions": ["storage", "declarativeContent"],
+    "permissions": ["storage", "declarativeContent", "activeTab"],
     "background": {
         "scripts": ["background.js"],
         "persistent": false

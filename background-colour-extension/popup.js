@@ -7,3 +7,16 @@ chrome.storage.sync.get('color', function(data) {
 
 // This takes the colour from the popup.html, gets the colour value from strage
 // Applies the colour to the button
+
+changeColor.onclick = function(element) {
+    let color = element.target.value;
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        chrome.tabs.executeScript(
+            tabs[0].id,
+            {code: 'document.body.style.backgroundColor = "' + color + '";'}
+        )
+    });
+};
+
+// This adds an onClick event to the button that triggers a programatically injected content script 
+// thus it's a user-invoke script rather than auto inserting code into a web page
