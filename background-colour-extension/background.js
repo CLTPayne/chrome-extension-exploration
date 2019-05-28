@@ -18,4 +18,5 @@ chrome.runtime.onInstalled.addListener(function() {
     });
 });
 
-
+// The plugin will be usable when the user navigates to a url that includes
+// "developer.chrome.com"
