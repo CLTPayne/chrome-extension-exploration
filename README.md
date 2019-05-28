@@ -18,3 +18,4 @@ This extension reads the first href from a page and on click of the extension ic
 2. Background scripts have full access to the chrome APIs but cannot access the current page. 
 3. Message passing is how a content script interacts with a background script. 
 4. Background scripts should generally not be persistent (and are thus set to `false` in the `manifest.json`). You would only keep a background script persistently active if the extension uses the [chrome.webRequest](https://developer.chrome.com/extensions/webRequest) api to block or modify network requests. 
+5. Most chrome.* apis must be registered under the `"permissions"` field of the `manifest.json`.
