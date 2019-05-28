@@ -4,6 +4,9 @@
 Following this introductory tutorial in order to get started with Chrome extensions and learn more about their potential. https://thoughtbot.com/blog/how-to-make-a-chrome-extension
 This extension reads the first href from a page and on click of the extension icon it opens the link in a new tab. 
 
+#### Background Colour
+Following this tutorial from chrome https://developer.chrome.com/extensions/getstarted to set up a plugin that is only active on a give site and conditionally adds content code when the user selects the plugin. 
+
 ### General Info: 
 
 #### Load your extension: 
